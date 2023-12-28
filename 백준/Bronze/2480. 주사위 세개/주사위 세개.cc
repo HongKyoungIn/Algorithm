@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 #include <algorithm>
 
 using namespace std;
@@ -9,22 +8,20 @@ int main() {
     int max_num = 0;
     int same_num = 0;
     int price;
-    
+
     cin >> a >> b >> c;
-    
-    max_num = max(a, b);
-    max_num = max(max_num, c);
-    
-    if(a == b){
+    max_num = max({a, b, c});
+
+    if(a == b) {
         same_num = a;
     }
-    else if(a == c){
+    else if(a == c) {
         same_num = a;
     }
-    else if(b == c){
+    else if(b == c) {
         same_num = b;
     }
-    
+
     if(same_num == 0) {
         price = max_num * 100;
         cout << price << endl;
@@ -39,6 +36,6 @@ int main() {
             cout << price << endl;
         }
     }
-    
+
     return 0;
 }
