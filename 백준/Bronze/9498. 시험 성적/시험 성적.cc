@@ -1,35 +1,24 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main() {
-    int score;
-    int num;
+    int A;
+    
+    scanf("%d", &A);
 
-    cin >> score;
-
-    num = score / 10;
-
-    switch(num) {
-    case 10:
-        cout << "A" << endl;
-        break;
-    case 9:
-        cout << "A" << endl;
-        break;
-    case 8:
-        cout << "B" << endl;
-        break;
-    case 7:
-        cout << "C" << endl;
-        break;
-    case 6:
-        cout << "D" << endl;
-        break;
-    default:
-        cout << "F" << endl;
-        break;
+    if (A >= 90) {
+        printf("A\n");
+    } else if (A >= 80) {
+        printf("B\n");
+    } else if (A >= 70) {
+        printf("C\n");
+    } else if (A >= 60) {
+        printf("D\n");
+    } else {
+        printf("F\n");
     }
-
+    
     return 0;
 }
