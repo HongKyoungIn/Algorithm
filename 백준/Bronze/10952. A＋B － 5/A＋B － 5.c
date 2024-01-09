@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <stdbool.h>
 
 int main() {
    int A=1, B=1;
-   while(true) {
+   while(1) {
       scanf("%d %d", &A, &B);
         
       if (A == 0 && B == 0) 
