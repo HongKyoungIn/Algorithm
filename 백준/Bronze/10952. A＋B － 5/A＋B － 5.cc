@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     int a, b;
     
-    while(2) {
+    while(1) {
         cin >> a >> b;
         if(a + b == 0){
             break;
