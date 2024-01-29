@@ -8,7 +8,6 @@ int main() {
     int m;
     int a;
     int b;
-    int temp;
 
     cin >> n >> m;
     
