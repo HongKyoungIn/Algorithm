@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     int n = 30; // 학생 수
 
-    int array[n] = {0,}; // 학생 수 만큼의 크기를 가진 배열
+    int array[n] = {0}; // 학생 수 만큼의 크기를 가진 배열
 
     int student;
 
