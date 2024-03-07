@@ -2,14 +2,14 @@
 
 using namespace std;
 
-int Hyo(int a, int b) {
-    int sum;
+long Hyo(long a, long b) {
+    long sum;
     sum = (a + b) * (a - b);
     return sum;
 }
 
 int main() {
-	int a, b;
+	long a, b;
     
     cin >> a >> b;
     
