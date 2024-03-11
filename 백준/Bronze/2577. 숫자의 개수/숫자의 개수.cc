@@ -21,12 +21,8 @@ int main() {
                 count++;
             }
         }
-        if(i == 57) {
-            cout << count;
-        }
-        else {
-            cout << count << endl;
-        }
+        cout << count << endl;
+
         count = 0;
     }
 }
