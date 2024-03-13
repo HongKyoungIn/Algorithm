@@ -1,31 +1,27 @@
 #include <iostream>
-#include <cstring>
+
 using namespace std;
 
 int main() {
+    int t = 0;
+    int num[7];
 
-	int t = 0, num;
-	cin >> t;
+    cin >> t;
 
-	for (int i = 0; i < t; i++)
-	{
-		int sum = 0, min = 100;
-		for (int j = 0; j < 7; j++)
-		{
-			cin >> num;
-			if (num % 2 == 0)
-			{
-				sum += num;
-				if (num < min)
-				{
-					min = num;
-				}
-			}
+    for(int i = 0; i < t; i++) {
+        int sum = 0;
+        int min = 100;
 
-		}
-		cout << sum << " " << min << '\n';
-	}
+        for(int j = 0; j < 7; j++) {
+            cin >> num[j];
 
-	return 0;
+            if(num[j] % 2 == 0) {
+                sum = sum + num[j];
+                if(num[j] < min) {
+                    min = num[j];
+                }
+            }
+        }
+        cout << sum << " " << min << endl;
+    }
 }
-
