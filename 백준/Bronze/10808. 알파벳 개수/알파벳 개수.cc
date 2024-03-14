@@ -3,27 +3,18 @@
 using namespace std;
 
 int main() {
-
-	char s[101] = { 0 };
-	int num[26] = { 0 };
-	cin >> s;
-
-
-	for (int i = 0; i < 100; i++)
-	{
-		for (int j = 0; j < 26; j++)
-		{
-			if (s[i] - 'a' == j)
-			{
-				num[j]++;
-			}
-		}
+    int alphabet[26] = {0,};
+	string str;
+    int count = 0;
+    
+    cin >> str;
+    
+    for(int i = 0; i < str.length(); i++) {
+        alphabet[str[i] - 'a']++;
 	}
+	for (int i = 0; i < 26; i++) {
+		cout << alphabet[i] << " ";
+	}    
 
-	for (int j = 0; j < 26; j++)
-	{
-		cout << num[j] << " ";
-	}
 	return 0;
 }
-
