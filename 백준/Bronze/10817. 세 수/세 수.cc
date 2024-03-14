@@ -1,39 +1,18 @@
-#include <iostream>
-
+#include<iostream>
+#include<algorithm>
 using namespace std;
 
-int main() {
-	int num[3] = {0,0,0};
-    int diff[3] = {0,0,0};
-    int middle = 0;
-    int sum = 0;
-    int min = 0;
-    int index;
-    
-    for(int i = 0; i < 3; i++) {
-        cin >> num[i];
-        sum += num[i];
-    }    
-    
-    middle = sum / 3;
-    
-    for(int i = 0; i < 3; i++) {
-        diff[i] = abs(middle - num[i]);
-    }
-    
-    for(int i = 0; i < 3; i++) {
-        if(i == 0) {
-            min = diff[i];
-            index = i;
-        }
-        else{
-            if(diff[i] <= min) {
-                min = diff[i];
-                index = i;
-            }
-        }
-    }
+int main()
+{
+	int num[3];//세수 배열
+	for (int i = 0; i < 3; i++)
+	{
+		cin >> num[i];
+	}
 
-    cout << num[index];
+	sort(num, num+3);
+
+	cout << num[1];//두번째수 출력
+	
 	return 0;
 }
